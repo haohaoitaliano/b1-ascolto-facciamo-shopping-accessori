@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#285943" />
+    <title>Facciamo shopping! — Ascolto A2</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="hero">
+        <p class="eyebrow">好好意语 · Ascolto A2</p>
+        <h1>Facciamo shopping!</h1>
+        <p class="subtitle">Ascolta il dialogo e completa gli spazi con le parole mancanti.</p>
+        <p class="subtitle-cn">听对话，用缺少的单词完成句子。</p>
+      </header>
+
+      <section class="audio-card" aria-label="Audio del dialogo">
+        <div>
+          <p class="audio-label">Ascolta il dialogo</p>
+          <p class="audio-note">Puoi mettere in pausa, spostare il cursore e riascoltare.</p>
+        </div>
+        <audio id="dialogue-audio" controls preload="metadata">
+          <source id="audio-source" src="audio/facciamo-shopping.mp3" type="audio/mpeg" />
+          Il tuo browser non supporta la riproduzione audio.
+        </audio>
+        <p id="audio-status" class="audio-status" hidden role="status">L’audio non è ancora disponibile. Inserisci il file <code>audio/facciamo-shopping.mp3</code>.</p>
+      </section>
+
+      <section class="progress-card" aria-label="Avanzamento">
+        <div class="step is-active" data-step="1"><span>1</span> Scarpe</div>
+        <div class="step-line"></div>
+        <div class="step" data-step="2"><span>2</span> Accessori</div>
+        <div class="step-line"></div>
+        <div class="step" data-step="3"><span>✓</span> Rapporto</div>
+      </section>
+
+      <aside id="previous-record" class="previous-record" hidden></aside>
+
+      <form id="exercise-form" novalidate>
+        <section id="part-1" class="exercise-card part" aria-labelledby="part-1-title"></section>
+        <section id="part-2" class="exercise-card part" aria-labelledby="part-2-title" hidden></section>
+      </form>
+
+      <section id="report" class="report" hidden aria-labelledby="report-title"></section>
+
+      <footer>
+        <p>I risultati vengono salvati solo su questo dispositivo e in questo browser. Non vengono sincronizzati automaticamente.</p>
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
